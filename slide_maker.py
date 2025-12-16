@@ -116,7 +116,7 @@ def planner(state: GraphState) -> GraphState:
 
 def generate_slide(state: GraphState) -> GraphState:
     plan = state["messages"][-1].content
-    res = generate_image(GENERATE_PROMPT.format(plan=plan), model="openai/gpt-5-image-mini")
+    res = generate_image(GENERATE_PROMPT.format(plan=plan), model="google/gemini-2.5-flash-image")
     return {"messages": [AIMessage(content=res["choices"][0]["message"]["content"])]}
 
 
@@ -139,9 +139,3 @@ if __name__ == "__main__":
     config={"configurable": {"thread_id": "1"}}
     for chunk in app.stream({"messages": [{"role": "user", "content": sample}]}, stream_mode="updates", config=config):
         print(chunk)
-
-
-
-
-
-
