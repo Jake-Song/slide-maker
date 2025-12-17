@@ -39,3 +39,10 @@ uv sync
 # including dev packages
 uv sync --dev
 ```
+
+### env
+```bash
+cp .env.example .env
+OPENROUTER_API_KEY=   # Using Open Router API for now
+```
+

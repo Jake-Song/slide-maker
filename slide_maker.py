@@ -136,7 +136,7 @@ checkpointer = MemorySaver()
 app = graph.compile(checkpointer=checkpointer)
 
 if __name__ == "__main__":
-    sample = get_text("texts/sample.txt")
+    sample = get_text("demo/sample.txt")
   
     config={"configurable": {"thread_id": "1"}}
     for chunk in app.stream({"messages": [{"role": "user", "content": sample}]}, stream_mode="updates", config=config):
