@@ -8,6 +8,7 @@ dependencies = [
     "google-genai>=1.55.0",
     "langchain>=1.2.0",
     "langchain-google-genai>=4.0.0",
+    "langchain-openai>=1.1.4",
     "langgraph>=1.0.5",
     "openai>=2.12.0",
     "pillow>=12.0.0",

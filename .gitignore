@@ -13,4 +13,4 @@ wheels/
 .env
 
 # images
-*.png
+slides*/

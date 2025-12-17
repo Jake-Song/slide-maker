@@ -96,7 +96,9 @@ PLANNER_PROMPT = """
     1. figure out the main topic of the texts.
     2. decompose the texts into with their semantic meaning.
     3. make plans to generate slide images for each semantic meaning.
-    Note: A slide has only one sub topic.
+    Note: 
+    1. A slide has only one sub topic. 
+    2. slides should have texts some extent to be able to explain the sub topic.
     Texts: {texts}
    
     """
