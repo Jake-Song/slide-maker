@@ -10,8 +10,11 @@ dependencies = [
     "langchain-google-genai>=4.0.0",
     "langchain-openai>=1.1.4",
     "langgraph>=1.0.5",
+    "langgraph-checkpoint-postgres>=3.0.2",
+    "numpy>=2.3.5",
     "openai>=2.12.0",
     "pillow>=12.0.0",
+    "psycopg[binary,pool]>=3.3.2",
 ]
 
 [dependency-groups]
