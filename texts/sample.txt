@@ -1,0 +1,129 @@
+Summary of the article and thread (brief)
+Article: OpenAI announces itself (Dec 2015) as a non‑profit AI research lab, “unconstrained by a need to generate financial return.” Mission: advance digital intelligence to benefit humanity; focus on openness (papers, code, maybe patents), and safety (“AI should be an extension of individual human wills… broadly and evenly distributed”). It’s explicitly deep‑learning‑oriented, with a star founding team (Sutskever, Karpathy, Kingma, Schulman, etc.), $1B in committed funding from Musk, Altman, Thiel, AWS, Infosys, YC Research, etc., and rhetoric about long‑term AI risks and benefits.
+
+Thread themes:
+
+Excitement at the team and funding, plus jokes about the casual mention of $1B.
+Arguments over:
+Whether deep learning / neural nets can lead to AGI or will plateau.
+Whether AI risk talk is “fear‑mongering” or a prudent early start.
+Whether OpenAI is really about safety vs just joining the deep‑learning arms race.
+How “open” it will actually be; discussions of datasets, code, competitions, visas.
+Comparisons with MIRI / FHI and “friendly AI” research; some calling MIRI a cult, others defending it.
+Philosophical side‑trips: consciousness, free will, Chinese Room, whether reasoning implies agency.
+Ethics of enslavement of AI vs animals; analogies with guns, nukes, nanotech, nitrogen, synthetic biology.
+Early versions of now‑familiar worries: filter bubbles, AI‑driven propaganda, autonomous weapons, job loss.
+Meta‑digressions (H‑1B politics, “just, wow” as a phrase, NRA arguments, etc.).
+What actually happened to this topic (with hindsight)
+High‑level: OpenAI went from an idealistic non‑profit research lab to the most prominent commercial AI lab in the world, driving the LLM revolution and triggering global AI policy debates—while substantially walking back the original “non‑profit, open, unconstrained by financial return” framing.
+
+Key milestones (very condensed):
+
+2016–2018: open, research‑lab phase
+
+Released Gym, Universe, baselines, “Spinning Up in Deep RL,” many papers and code.
+Work on Dota 2 bots, robotics, unsupervised learning, language models (e.g., GPT, GPT‑2).
+Reputation as a high‑quality, relatively open deep‑learning lab.
+2019: structural pivot
+
+Created OpenAI LP, a capped‑profit subsidiary, explicitly to raise large capital while keeping a controlling non‑profit; a big shift away from the original “non‑profit only” spirit.
+Entered a massive partnership with Microsoft, which over time invested on the order of $13B+ (compute, cash, integration with Azure).
+2019–2021: frontier language models
+
+GPT‑2 (2019) and GPT‑3 (2020) showed surprisingly general capabilities across NLP tasks without task‑specific training.
+GPT‑2’s “staged release” and GPT‑3’s closed weights marked the end of OpenAI’s strongest openness.
+DALL·E and CLIP (2021) pioneered high‑quality image generation from text prompts.
+Late 2022–2024: ChatGPT era
+
+ChatGPT (Nov 2022) made LLMs a mainstream technology; usage exploded to hundreds of millions of users.
+GPT‑4 (2023) demonstrated strong general‑purpose performance across coding, reasoning, and many benchmarks; integrated deeply into products (ChatGPT, Copilot, etc.).
+OpenAI became the central public face of “frontier AI”, widely perceived as being on or near the leading edge of “AGI‑like” capabilities.
+Safety & alignment became big internal teams (policy, RLHF, red‑teaming), but also a major external criticism target (bias, hallucinations, misuse, race dynamics).
+Safety, governance, and backlash
+
+AI risk—once “sci‑fi” in 2015—became a mainstream policy topic. The EU AI Act, US executive order on AI (2023), UK/US/EU safety summits, and national strategies all cite both short‑term harms and long‑term risk.
+2023: Sam Altman briefly ousted by the OpenAI non‑profit board, then rapidly reinstated after staff and investor revolt, followed by board reshaping—a major governance drama directly about mission, safety, and control.
+2024: key safety figures (e.g., Jan Leike, Ilya Sutskever) left; resignation letters and public comments suggested internal tension between safety caution and rapid deployment/commercialization.
+Openness vs closedness
+
+OpenAI still publishes papers and some code, but frontier models are API‑only. The original blog’s suggestion that patents would be shared and everything be generally open is no longer accurate.
+Open‑source frontier models came mostly from others (Meta’s LLaMA family, Stability AI’s Stable Diffusion, etc.), not from OpenAI.
+MIRI & “friendly AI”
+
+MIRI continued doing very theoretical alignment work but became relatively peripheral compared to huge industry safety teams and new orgs (Anthropic, ARC, OpenAI’s alignment groups).
+By early 2020s, even mainstream ML leaders (Hinton, Bengio, Russell) publicly endorsed some level of existential‑risk concern, but the technical program is very different from MIRI’s original agenda.
+Net: OpenAI did become a leading institution, and deep learning—especially large transformers—ended up being the core path. AGI in the strong, fully autonomous sense is still not here in 2025, but general‑purpose models with impressive breadth of capability clearly are, and AI safety is now a serious field rather than just sci‑fi talk.
+
+“Most prescient” and “Most wrong” comments
+Most prescient
+
+visarga – “I don't think evolving a super intelligence will happen by simple accident, it will be an incremental process of search… The next big things I predict will be capable robots and decent dialogue agents.”
+
+The “incremental, search/engineering‑driven” trajectory is exactly what happened: continual scaling and refinement of deep models, not one magical accident.
+“Decent dialogue agents” is dead‑on: ChatGPT and its peers are the signature AI product class of the early 2020s. Robotics is behind dialogue but clearly advancing (e.g., Tesla Optimus, Google/Agility/Boston Dynamics).
+glup – “I'll wager RNNs in NLP given Ilya's background. Probably moving towards increasingly rich models of natural language semantics and pragmatics.”
+
+He missed transformers vs RNNs, but predicted OpenAI’s early focus: Ilya + NLP and richer semantic/pragmatic language models. OpenAI’s GPT line is exactly “rich models of language semantics/pragmatics.”
+Geee / camillomiller (on propaganda/filter bubbles)
+
+Geee worries about “AI to sort news/search/social feeds” and propaganda; camillomiller explicitly likens current recommender/filter bubbles to a “super intelligent centralized AI silently and invisibly deciding what's best for us to see.”
+In hindsight, algorithmic curation, engagement‑maximizing recommender systems and targeted content (YouTube/TikTok feeds, political micro‑targeting, etc.) became one of the major social impacts of ML.
+rl3 – critical of Musk’s “give everyone AI” strategy; notes that if AGI is scalable, first arrival + scaling could still yield a dominant superintelligence and that treating it like universal empowerment is analogous to open‑sourcing nukes.
+
+This maps well onto current debates: broad LLM access did not eliminate concentration of power; it coexists with massive centralized compute and closed frontier models, and many safety folks now argue for stronger controls rather than pure openness.
+Most wrong
+
+hacker_9 – “This is about 100 years too early. Seriously why do people think neural networks are the answer to AI? They are proven to be stupid outside of their training data… This fear-mongering is pointless.”
+
+Within 8–9 years, deep neural nets (scaled transformers) produced models with impressive generalization: transfer across tasks, in‑context learning, code synthesis, cross‑lingual capabilities, etc. Not “AGI”, but very far from “stupid outside training data.”
+AI risk talk is now taken seriously by governments, major labs, and many ML pioneers; whether or not one agrees, calling it “pointless” aged poorly.
+scottlocklin – “‘AI progress’ is a lot like progress in controlled nuclear fusion as an energy source. Aka, there is no such thing, really, though people work on it.”
+
+The 2015–2024 decade is arguably the most dramatic period of practical AI progress in history; the comparison to fusion stagnation turned out to be almost comically wrong.
+orthoganol – “In terms of artificial general intelligence… there is seemingly nothing at all out there that appears to even be on a trajectory, I mean even theoretically, to coming close. … I don't think the big breakthroughs… are going to come from well funded scientific researchers anyways, they are going to come out of left field from where you least expect it.”
+
+Major breakthroughs in general‑purpose capability did come from exactly the kind of large, well‑funded labs (OpenAI, Google DeepMind, Anthropic) he discounted, via fairly straightforward scaling of known architectures + tricks.
+argonaut (on progress plateauing) – while correct about OpenAI being deep‑learning‑dominated, his claim that we’re “nowhere close to AI” and that hacky, poorly understood neural nets make breakthroughs unlikely and progress bound to plateau doesn’t fit the next decade, where scaling these “hacky” methods produced qualitatively new behaviors. Not AGI yet, but clearly beyond what 2015 expectations would have suggested.
+
+Other fun or notable aspects in hindsight
+The original “non‑profit, open, patents shared” promise now reads almost like an alternate timeline. Today OpenAI is a capped‑profit entity with a massive corporate partner, closed frontier models, and an aggressive product roadmap. The 2015 text is often quoted back at OpenAI critics as evidence of mission drift.
+
+Elon Musk’s role: co‑chair and key funder at launch; later left the board (2018), publicly criticized OpenAI for becoming “closedAI,” and in 2024 filed a lawsuit alleging breach of its original non‑profit mission—then launched his own competitor (xAI). That arc is foreshadowed by his early “open AI for everyone” rhetoric in the linked Backchannel interview.
+
+MIRI / Yudkowsky discourse: 2015 commenters called MIRI a “cult” and “philosophers,” yet by 2023 several mainstream ML legends (Hinton, Bengio) voiced views closer to the original “AI x‑risk” concerns, and governments convened AI safety summits. MIRI itself didn’t become central, but the topic moved from fringe to center.
+
+The “just, wow” linguistics micro‑thread and HN moderation meta‑discussion are a nice time capsule of 2015 HN culture (dang gently steering away from flamewars, users analyzing phrasing minutiae).
+
+Early worries about AI‑driven surveillance and autonomous weapons (samstave, Udik, odkol, etc.) anticipate real 2020s debates: facial recognition in policing, drone swarms, “slaughterbots” campaigns, and export controls on surveillance tech.
+
+The repeated guns/nukes analogies: a lot of the rhetoric now heard in policy circles—“like nukes, not like guns,” attacker vs defender advantage, first‑mover dynamics—was already being hashed out in this thread, just with far less context.
+
+Final grades
+Final grades
+
+visarga: A+ (nailed “decent dialogue agents” and an incremental, search-driven path to more capable AI)
+glup: A- (correctly anticipated OpenAI focusing on richer NLP semantics/pragmatics, even if the architectures shifted from RNNs to transformers)
+Geee: A (very early, accurate concern about AI-powered curation/propaganda and its societal impact)
+camillomiller: A (strong articulation of filter-bubble/recommender risks that became central in the 2020s)
+rl3: B+ (good critique of “everyone has AI” as safety, foreshadowing current concerns about centralization and arms race dynamics)
+astrofinch: A- (sophisticated attacker/defender equilibrium framing that matches today’s AI security debates)
+johann28: B+ (solid, nuanced take on ML vs symbolic AI and realistic near-term misuse; much of it held up)
+Jach: B (accurate description of MIRI’s stance and the weak-AI vs AGI distinction; MIRI’s influence stayed niche but the conceptual split is now standard)
+karmacondon: B- (prescient about the importance of code+data, benchmarks, competitions; but “evil AI and safety… just science fiction” aged poorly)
+nazgulnarsil: B+ (early use of “differential safety development” framing that’s now common in frontier-AI governance discussions)
+Houshalter: B (right to emphasize the control problem and expert timelines; overconfident about how straightforward “building AI with infinite compute” would be)
+mark_l_watson: B+ (correctly saw OpenAI as pushing cutting-edge research rather than a monolithic AGI framework like OpenCog)
+nicklo: B+ (accurate contrast between OpenCog’s monolithic design and OpenAI’s “push the frontier, publish as you go” model)
+bengpertzel: B+ (realistic view of OpenAI and OpenCog as complementary; correctly guessed OpenAI would fund varied AI work, not one grand unified design)
+viklas: B+ (“giga-factory of neurons” plus a general model exposed via API is very close to the GPT-3/4 API world, minus the true open-sourcing)
+robbensinger: B+ (right that OpenAI and MIRI would talk and that safety would grow as a field, though MIRI remained peripheral)
+argonaut: C+ (right about OpenAI’s deep-learning focus and lack of dedicated safety researchers at launch; significantly underestimated how far “hacky” deep nets would go and predicted a plateau that didn’t arrive—yet)
+orthoganol: D (claimed nothing was on a trajectory to AGI and that big breakthroughs wouldn’t come from well-funded labs; OpenAI/DeepMind/Anthropic are counterexamples)
+scottlocklin: F (asserted there was effectively no real AI progress, likening it to fusion; the following decade of LLM and generative-model breakthroughs flatly contradicted this)
+hacker_9: F (confidently declared we were “100 years too early,” that neural nets are “proven to be stupid,” and that AI risk concerns are pointless; all badly undermined by subsequent progress and mainstreaming of AI safety debates)
+stefantalpalaru: D (dismissed the whole thing as a PR stunt by people who “don’t understand AI”; whatever OpenAI’s flaws, its technical impact has been enormous)
+zxcvvcxz: C- (correct that current systems could be misused in war/targeting; but the blanket dismissal of “Skynet/doomsday” risk as ridiculous underestimates how seriously many experts and policymakers now take long-term AI risk)
+tim333: C (AI did not progress as “predictably” as implied and the “finite skill areas to tick off” framing missed the emergent generality of LLMs)
+vonnik: B (insightful comparison of AI with guns vs nukes and the inevitability/irregulatability angle; still debated, but the framing holds up reasonably well)
+Overall interestingness
+Article hindsight analysis interestingness score: 10
